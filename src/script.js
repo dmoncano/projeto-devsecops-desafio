@@ -1,4 +1,4 @@
-const API_KEY = "ghp_xK92mNpL34rTvQ87wZaB56cDeFgHiJkL";
+const API_KEY = "VALOR_API";
 const DB_PASSWORD = "SENHA_BANCO_DE_DADOS";
 
 // Busca tarefas do "banco de dados"
