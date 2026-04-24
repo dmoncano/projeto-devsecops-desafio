@@ -22,8 +22,16 @@ A pipeline está **incompleta**. Os steps de segurança precisam ser implementad
 - [ ] Deploy com **GitHub Pages**
 
 ## Como a pipeline funciona
-> **Substitua este bloco pela sua explicação após implementar a pipeline.**
-> Descreva cada step, o que ele faz e por que ele é importante para a segurança.
+
+Durante as aulas práticas, compreendemos o funcionamento do pipeline CI/CD. Os códigos foram inseridos com erros propositais, com o objetivo de demonstrar como as ferramentas de análise atuam na identificação de vulnerabilidades.
+
+Ao detectar alguma falha, o processo é interrompido para que a correção seja realizada.
+
+Utilizamos o recurso "Secrets and Variables - Actions" do GitHub para ocultar informações sensíveis. Após a execução do pipeline novamente, a ferramenta SAST "Semgrep", responsável pela análise estática do código, identificou novas vulnerabilidades. Após as devidas correções, o código passou a funcionar corretamente, e o GitHub Pages disponibilizou a URL com a aplicação em execução.
+
+A ferramenta DAST também foi apresentada, permitindo observar a importância da análise de aplicações em tempo de execução, complementando a análise estática.
+
+Durante o curso, conhecemos ferramentas relevantes, compreendemos a teoria e aplicamos o conhecimento na prática. Além disso, reforçamos a importância de analisar continuamente o código e todas as etapas do processo, incorporando a segurança desde o início, a fim de garantir que a aplicação esteja livre de vulnerabilidades antes de ser colocada em produção.
 
 ## URL de Produção
 > Adicione aqui o link do GitHub Pages após o deploy.
